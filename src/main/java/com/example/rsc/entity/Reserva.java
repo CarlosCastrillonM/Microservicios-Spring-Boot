@@ -1,0 +1,27 @@
+package com.example.rsc.entity;
+
+import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Entity
+@Table(name = "reservas")
+public class Reserva {
+
+    @Id
+    private Integer id;
+
+    @Column(name = "user_id")
+    private Integer usuarioId;
+
+    @Column(name = "oferta_id")
+    private Integer ofertaId;
+
+    @Column(name = "fecha_reserva")
+    private LocalDateTime fechaReserva;
+
+    @Column(name = "total_pago")
+    private Double totalPago;
+
+}
