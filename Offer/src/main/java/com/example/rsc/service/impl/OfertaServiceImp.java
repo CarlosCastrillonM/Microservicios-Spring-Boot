@@ -49,7 +49,6 @@ public class OfertaServiceImp implements OfertaService {
 
     @Override
     public OfertaDto create(OfertaDto ofertaDto) {
-
         Oferta entidadOferta = new Oferta();
 
         entidadOferta = ofertaMapper.toEntity(ofertaDto);

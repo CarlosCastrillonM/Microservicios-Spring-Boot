@@ -27,8 +27,8 @@ public class ReservaServiceImp implements ReservaService {
         List<Reserva> reserva = reservaRepository.findAll();
         List<ReservaDto> reservaDtos = new ArrayList<>();
 
-        for (Reserva reservaDto : reserva) {
-            reservaDtos.add(reservaMapper.toDto(reservaDto));
+        for (Reserva entidad : reserva) {
+            reservaDtos.add(reservaMapper.toDto(entidad));
         }
         return reservaDtos;
     }
@@ -60,7 +60,7 @@ public class ReservaServiceImp implements ReservaService {
             ReservaInDB = reservaRepository.save(ReservaInDB);
 
             return reservaMapper.toDto(ReservaInDB);
-        })  ;
+        });
     }
 
     @Override
