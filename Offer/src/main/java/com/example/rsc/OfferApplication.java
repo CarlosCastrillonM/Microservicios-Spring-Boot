@@ -1,7 +1,11 @@
 package com.example.rsc;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class OfferApplication {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SpringApplication.run(OfferApplication.class, args);
     }
 }

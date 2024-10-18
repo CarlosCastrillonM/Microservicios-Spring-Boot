@@ -4,6 +4,7 @@ import com.example.rsc.dto.OfertaDto;
 import com.example.rsc.service.OfertaService;
 import jakarta.servlet.ServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -20,7 +21,7 @@ public class OfertaController {
     private final OfertaService ofertaService;
 
     @Autowired
-    public OfertaController(OfertaService ofertaService) {
+    public OfertaController(@Qualifier("offerService") OfertaService ofertaService) {
         this.ofertaService = ofertaService;
     }
 

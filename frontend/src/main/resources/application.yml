@@ -15,4 +15,4 @@ spring:
       password: root
       host: localhost
       port: 27017
-      database: frontend
+      database: offer
