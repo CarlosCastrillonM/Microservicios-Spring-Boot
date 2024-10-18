@@ -19,8 +19,8 @@ public interface ReservaMapper {
             @Mapping(target = "fechaReserva", source = "fechaReserva"),
             @Mapping(target = "totalPago", source = "totalPago"),
     })
-    ReservaDto toDto(Reserva airline);
+    ReservaDto toDto(Reserva reserva);
 
     @InheritInverseConfiguration
-    Reserva toEntity(ReservaDto airlineDto);
+    Reserva toEntity(ReservaDto reservaDto);
 }
