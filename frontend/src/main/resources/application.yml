@@ -3,23 +3,14 @@
 server:
   port: 8080
 spring:
+  thymeleaf:
+    cache: false       # Allow Thymeleaf templates to be reloaded at runtime
+    prefix: classpath:/webapp/templates/    # Trailing / mandatory
+                                            # Template location for this application only
   application:
     name: frontend
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/frontend
-#    username: postgres
-#    password: postgres
-#    driver-class-name: org.postgresql.Driver
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.PostgreSQLDialect
-#    show-sql: true
   data:
     mongodb:
-      authentication-database: admin
       username: root
       password: root
       host: localhost
