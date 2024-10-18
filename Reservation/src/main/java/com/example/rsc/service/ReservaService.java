@@ -11,5 +11,4 @@ public interface ReservaService {
     ReservaDto create(ReservaDto reservaDto);
     Optional<ReservaDto> update(Integer id, ReservaDto newReservaDto);
     void delete(Integer id);
-    List<ReservaDto> findByName(String name);
 }
