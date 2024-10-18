@@ -11,7 +11,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>rsc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rsc</name>
+    <packaging>pom</packaging>
+    <name>rsc</name>
 	<description>rsc project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -20,7 +21,11 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>Reservation</module>
+		<module>Main</module>
+	</modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
