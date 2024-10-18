@@ -3,7 +3,6 @@ package com.example.rsc.dto;
 import org.springframework.cglib.core.Local;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class ReservaDto {
 
@@ -11,9 +10,9 @@ public class ReservaDto {
     private Integer usuarioId;
     private Integer ofertaId;
     private LocalDateTime fechaReserva;
-    private double totalPago;
+    private Double totalPago;
 
-    public ReservaDto(Integer id, Integer usuarioId, Integer ofertaId, LocalDateTime fechaReserva, double totalPago) {
+    public ReservaDto(Integer id, Integer usuarioId, Integer ofertaId, LocalDateTime fechaReserva, Double totalPago) {
         this.id = id;
         this.usuarioId = usuarioId;
         this.ofertaId = ofertaId;
@@ -53,11 +52,11 @@ public class ReservaDto {
         this.fechaReserva = fechaReserva;
     }
 
-    public double getTotalPago() {
+    public Double getTotalPago() {
         return totalPago;
     }
 
-    public void setTotalPago(double totalPago) {
+    public void setTotalPago(Double totalPago) {
         this.totalPago = totalPago;
     }
 
