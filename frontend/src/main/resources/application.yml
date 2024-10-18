@@ -1,0 +1,27 @@
+---
+
+server:
+  port: 8080
+spring:
+  application:
+    name: frontend
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/frontend
+#    username: postgres
+#    password: postgres
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#    show-sql: true
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: root
+      host: localhost
+      port: 27017
+      database: frontend
