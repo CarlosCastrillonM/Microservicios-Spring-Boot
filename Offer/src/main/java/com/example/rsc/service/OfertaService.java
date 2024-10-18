@@ -11,5 +11,5 @@ public interface OfertaService {
     OfertaDto create(OfertaDto ofertaDto);
     Optional<OfertaDto> update(Integer id, OfertaDto newOfertaDto);
     void delete(Integer id);
-    List<OfertaDto> findByName(String name);
+    List<OfertaDto> findByDestino(String destino);
 }
