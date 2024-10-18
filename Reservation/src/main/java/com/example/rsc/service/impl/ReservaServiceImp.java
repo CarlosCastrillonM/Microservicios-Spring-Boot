@@ -1,7 +1,8 @@
-package com.example.rsc.service;
+package com.example.rsc.service.impl;
 
 import com.example.rsc.dto.ReservaDto;
 import com.example.rsc.repository.ReservaRepository;
+import com.example.rsc.service.ReservaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
