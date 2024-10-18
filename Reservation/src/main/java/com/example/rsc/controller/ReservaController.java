@@ -4,6 +4,7 @@ import com.example.rsc.dto.ReservaDto;
 import com.example.rsc.service.ReservaService;
 import jakarta.servlet.ServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -20,7 +21,7 @@ public class ReservaController {
     private final ReservaService reservaService;
 
     @Autowired
-    public ReservaController(ReservaService reservaService) {
+    public ReservaController(@Qualifier("reservationService") ReservaService reservaService) {
         this.reservaService = reservaService;
     }
 

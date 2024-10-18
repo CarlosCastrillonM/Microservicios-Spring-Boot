@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Service("reservationService")
 public class ReservaServiceImp implements ReservaService {
     private final ReservaRepository reservaRepository;
     private final ReservaMapper reservaMapper;
