@@ -37,7 +37,7 @@ public class ReservaController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @PostMapping("/{id")
+    @PostMapping("/{id}")
     public ResponseEntity<ReservaDto> createReserva(@RequestBody ReservaDto reservaDto) throws URISyntaxException {
         ReservaDto newReservaDto = reservaService.create(reservaDto);
 
@@ -49,7 +49,7 @@ public class ReservaController {
         return ResponseEntity.created(location).body(newReservaDto);
     }
 
-    @PutMapping("/{id")
+    @PutMapping("/{id}")
     public ResponseEntity<ReservaDto> update(@PathVariable Integer id, @RequestBody ReservaDto reservaDto) throws URISyntaxException {
         Optional<ReservaDto> reservaUpdated = reservaService.update(id, reservaDto);
 
@@ -58,7 +58,7 @@ public class ReservaController {
                 .orElseGet(() -> {
                     ReservaDto newReservaDto = reservaService.create(reservaDto);
                     URI location = ServletUriComponentsBuilder.fromCurrentRequest()
-                            .path("/{id")
+                            .path("/{id}")
                             .buildAndExpand(newReservaDto.getId())
                             .toUri();
 
@@ -66,7 +66,7 @@ public class ReservaController {
                 });
     }
 
-    @DeleteMapping("/{id")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteReserva(@PathVariable Integer id) {
         reservaService.delete(id);
         return ResponseEntity.badRequest().build();
