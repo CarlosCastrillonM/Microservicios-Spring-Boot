@@ -1,7 +1,6 @@
 package com.example.rsc.controller;
 
 import com.example.rsc.dto.ReservaDto;
-import com.example.rsc.entity.Reserva;
 import com.example.rsc.service.ReservaService;
 import jakarta.servlet.ServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,12 +1,14 @@
 package com.example.rsc.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
 @Table(name = "reservas")
+@Getter
 public class Reserva {
 
     @Id

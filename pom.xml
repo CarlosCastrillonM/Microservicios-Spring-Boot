@@ -34,8 +34,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>21</java.version>
-		<version.lombok>1.18.18</version.lombok>
-		<version.mapstruct>1.4.2.Final</version.mapstruct>
+		<version.lombok>1.18.34</version.lombok>
+		<version.mapstruct>1.6.2</version.mapstruct>
 		<version.mapstruct-lombok>0.2.0</version.mapstruct-lombok>
 	</properties>
 	<dependencies>
@@ -101,6 +101,11 @@
 				<version>2023.0.3</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>rsc</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
