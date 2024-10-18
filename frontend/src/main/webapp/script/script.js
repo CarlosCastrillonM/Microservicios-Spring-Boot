@@ -13,9 +13,7 @@ let createOffer = async () => {
   date.providerName = document.getElementById("provider-name").value;
   date.providerType = document.getElementById("provider-type").value;
   date.providerEmail = document.getElementById("provider-email").value;
-  date.providerPhoneNumber = document.getElementById(
-    "provider-phone-number"
-  ).value;
+  date.providerPhoneNumber = document.getElementById("provider-phone-number").value;
   date.date = document.getElementById("date").value;
   date.time = document.getElementById("time").value;
   date.origin = document.getElementById("origin").value;
