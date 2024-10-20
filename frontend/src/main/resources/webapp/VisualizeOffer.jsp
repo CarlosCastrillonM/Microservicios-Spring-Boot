@@ -1,8 +1,8 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.rsc.entities.Offer" %>
+<%@ page import="com.example.rsc.dto.OfertaDto" %>
 <%@ page import="java.time.LocalDateTime" %>
-<%@ page import="com.rsc.entities.Transport" %>
-<%@ page import="com.rsc.entities.Provider" %>
+<%@ page import="com.example.rsc.dto.TransporteDto" %>
+<%@ page import="com.example.rsc.dto.ProveedorDto" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,21 +40,21 @@
 
           <%
             //noinspection unchecked
-            List<Offer> offers = (List<Offer>) request.getAttribute("offers");
-            for (Offer offer : offers) {
-              LocalDateTime dt = offer.getDepartureDate();
-              Transport transport = offer.getTransport();
-              Provider provider = offer.getProvider();
+            List<OfertaDto> offers = (List<OfertaDto>) request.getAttribute("offers");
+            for (OfertaDto offer : offers) {
+              LocalDateTime dt = offer.getDepartureDateTime();
+              TransporteDto transport = offer.getTransporteDto();
+              ProveedorDto provider = offer.getProveedorDto();
           %>
           <tbody>
             <tr>
-              <td><%= provider.getProviderType() %></td>
-              <td><%= transport.getBrand() %></td>
-              <td><%= transport.getCapacity() %></td>
+              <td><%= provider.getTipoProveedor() %></td>
+              <td><%= transport.getMarca() %></td>
+              <td><%= transport.getCapacidad() %></td>
               <td><%= dt.toLocalDate() %></td>
               <td><%= dt.toLocalTime() %></td>
-              <td><%= offer.getOrigin() %></td>
-              <td><%= offer.getDestination() %></td>
+              <td><%= offer.getOrigen() %></td>
+              <td><%= offer.getDestino() %></td>
               <td>
                 <button class="update" type="submit" id="update-button-<%= offer.getId() %>" name="update-button">Update</button>
                 <button class="delete" type="submit" id="delete-button-<%= offer.getId() %>" name="delete-button">Delete</button>
