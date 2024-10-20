@@ -1,0 +1,14 @@
+---
+
+server:
+  port: 8090
+spring:
+  application:
+    name: offers
+  data:
+    mongodb:
+      username: root
+      password: root
+      host: localhost
+      port: 27017
+      database: offers

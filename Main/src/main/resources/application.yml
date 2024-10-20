@@ -1,0 +1,15 @@
+---
+
+server:
+  port: 8080
+spring:
+  application:
+    name: main-server
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: root
+      host: localhost
+      port: 27017
+      database: main

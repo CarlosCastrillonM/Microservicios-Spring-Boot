@@ -12,16 +12,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Service("ofertaService")
+@Service("offerService")
 public class OfertaServiceImp implements OfertaService {
 
     private final OfertaRepository ofertaRepository;
-    private final OfertaMapper ofertaMapper;
+    private final OfertaMapper ofertaMapper = OfertaMapper.INSTANCE;
 
     @Autowired
-    public OfertaServiceImp(OfertaRepository ofertaRepository, OfertaMapper ofertaMapper) {
+    public OfertaServiceImp(OfertaRepository ofertaRepository) {
         this.ofertaRepository = ofertaRepository;
-        this.ofertaMapper = ofertaMapper;
     }
 
     @Override

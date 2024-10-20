@@ -22,12 +22,6 @@
     
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>8.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>com.example</groupId>
             <artifactId>Main</artifactId>
             <version>0.0.1-SNAPSHOT</version>
