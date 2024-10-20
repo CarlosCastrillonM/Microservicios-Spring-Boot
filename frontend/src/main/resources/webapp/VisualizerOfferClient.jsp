@@ -44,7 +44,7 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <a class="reserve" href="OfferCompleted.jsp" id="reserve-button" name="reserve-button">Reserve</a>
+                        <button class="reserve" id="reserve-button" name="reserve-button">Reserve</button>
                     </td>
                 </tr>
             </tbody>

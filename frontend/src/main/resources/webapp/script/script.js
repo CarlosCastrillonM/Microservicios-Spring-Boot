@@ -36,6 +36,7 @@ let createOffer = async () => {
 let btnReserve = document.getElementById("reserve-button");
 
 btnReserve.addEventListener("click", () => {
+  Event.preventDefault();
   reserve();
 });
 
@@ -59,11 +60,13 @@ let reserve = async () => {
     if (response.ok) {
       const result = await response.json();
       console.log("Reservation created successfully!", result);
+      window.location.href = "OfferCompleted.jsp";
     } else {
       console.error("Error creating reservation");
+      alert("Error: Could not create reservation, try again");
     }
   } catch (error) {
-    console.error("Request error");
+    console.error("Request error", error);
   }
 };
 
