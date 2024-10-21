@@ -8,6 +8,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class WebServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebServerApplication.class, args);
-        HomeController homeController = new HomeController();
     }
 }
