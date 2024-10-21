@@ -49,6 +49,7 @@
                 </tr>
             </tbody>
 
+            </table>
         </div>
     </main>
   </body>
