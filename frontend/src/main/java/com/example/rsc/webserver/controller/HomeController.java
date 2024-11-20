@@ -9,4 +9,14 @@ public class HomeController {
     public String home() {
         return "Login";
     }
+
+    @RequestMapping("/newOffer")
+    public String newOffer() {
+        return "FormNewOffer";
+    }
+
+    @RequestMapping("/visualizeOffer")
+    public String visualizeOffer() {
+        return "VisualizerOfferClient";
+    }
 }

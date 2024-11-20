@@ -21,8 +21,8 @@
       <h1>Login:</h1>
 
       <div class="buttons">
-        <a href="FormNewOffer.jsp" class="button-provider">Provider</a>
-        <a href="VisualizerOfferClient.jsp" class="button-client">Client</a>
+        <a href="./newOffer" class="button-provider">Provider</a>
+        <a href="visualizeOffer" class="button-client">Client</a>
       </div>
     </div>
   </body>

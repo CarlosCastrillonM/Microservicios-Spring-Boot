@@ -63,7 +63,7 @@
           <%
             }
           %>
-        <a class="button-plus" href="FormNewOffer.jsp">
+        <a class="button-plus" href="./newOffer">
           <i class="fa-solid fa-plus fa-xl" style="color: #ffffff"></i>
         </a>
       </div>

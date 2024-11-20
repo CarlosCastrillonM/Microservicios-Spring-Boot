@@ -1,6 +1,5 @@
 package com.example.rsc.webserver;
 
-import com.example.rsc.webserver.controller.HomeController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

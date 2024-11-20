@@ -5,9 +5,8 @@ server:
 spring:
   thymeleaf:
     cache: false       # Allow Thymeleaf templates to be reloaded at runtime
-    view:
-      prefix: classpath:/webapp/   # Trailing / mandatory            # Template location for this application only
-      suffix: .jsp
+    prefix: classpath:/webapp/   # Trailing / mandatory            # Template location for this application only
+    suffix: .jsp
   application:
     name: frontend
   data:
